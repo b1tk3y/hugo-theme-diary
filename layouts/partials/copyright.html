@@ -1,3 +1,10 @@
+{{ if .Site.Params.host }}
+Powered by <a href="{{ .Site.Params.host }}">
+{{ if .Site.Params.hostName }}{{ .Site.Params.hostName }}
+{{ else }}{{ .Site.Params.host }}{{ end }}</a>
+<br>
+{{ else }}
+{{ end }}
 <!-- Please don't remove the information of theme makers. -->
 {{ i18n "hugo_theme" }} <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> {{ i18n "by" }} <a href="https://risehere.net/">Rise</a>
 <br>
